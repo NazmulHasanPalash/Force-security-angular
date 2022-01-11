@@ -1,0 +1,21 @@
+.second-style{
+    background-color: rgb(8, 8, 88) !important;
+    width:100%;
+}
+.body-style{
+    text-align: right !important;
+}
+.contact-style a{
+    text-decoration: none;
+    color:black;
+}
+.contact-style{
+    background-color: white!important;
+    border-radius: 40px;
+}
+.tag-style{
+    color: coral !important;
+}
+.span-style{
+    color: #75edc2 !important ;
+}
