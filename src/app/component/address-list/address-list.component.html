@@ -1,0 +1,26 @@
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 w-100 mx-auto" id="service">
+    <ng-container *ngFor="let product  of productList">
+        <div class="col card-style service-style   p-2 rounded-3 ">
+            <div class="card h-100 shadow-lg  ">
+
+                <div class="card-body-style detail-style text-center">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{{product.name}}</h4>
+                        <h5 class="card-text">Price: {{product.price}}</h5>
+                        <p class="card-text">{{product.description}}</p>
+
+                    </div>
+
+                    <button class="btn btn-style btn-warning   m-5 p-2 mx-auto">Booking:
+                        {{product.name.toLowerCase()}}</button>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </ng-container>
+
+</div>

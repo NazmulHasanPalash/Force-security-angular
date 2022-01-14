@@ -15,7 +15,11 @@ import { ThirdSlideComponent } from './component/third-slide/third-slide.compone
 import { HomeComponent } from './page/home/home.component';
 import { AboutComponent } from './page/about/about.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { CountComponent } from './component/count/count.component'
+import { CountComponent } from './component/count/count.component';
+import { AddressBookingComponent } from './page/address-booking/address-booking.component';
+import { AddressDetailsComponent } from './page/address-details/address-details.component';
+import { FormsModule } from '@angular/forms';
+import { AddressListComponent } from './component/address-list/address-list.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,17 @@ import { CountComponent } from './component/count/count.component'
     HomeComponent,
     AboutComponent,
     FooterComponent,
-    CountComponent
+    CountComponent,
+    AddressBookingComponent,
+    AddressDetailsComponent,
+    AddressListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

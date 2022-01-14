@@ -1,0 +1,25 @@
+<div class="submit-form">
+    <form class="w-75 mx-auto" *ngIf="!submitted">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="title" required [(ngModel)]="address.title" name="title" />
+        </div>
+        <div class=" mb-3">
+            <label for="exampleInputPassword1" class="form-label">Address</label>
+            <input type="text" class="form-control" id="description" required [(ngModel)]="address.description"
+                name="description" />
+
+            <div id="emailHelp" class="form-text">We'll never share your address with anyone else.</div>
+
+        </div>
+
+        <button (click)="saveAddress()" class="btn btn-primary">Submit</button>
+
+    </form>
+    <div *ngIf="submitted">
+        <h4>You submitted successfully</h4>
+        <button class="btn btn-success" (click)="newAddress()">Add</button>
+
+    </div>
+
+</div>
