@@ -20,6 +20,14 @@ import { AddressBookingComponent } from './page/address-booking/address-booking.
 import { AddressDetailsComponent } from './page/address-details/address-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddressListComponent } from './component/address-list/address-list.component';
+import { DxButtonModule, DxTextBoxModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
+// import {
+//   DxTextBoxModule,
+//   DxValidatorModule,
+//   DxValidationSummaryModule,
+//   DxValidationGroupModule,
+//   DxButtonModule
+// } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -44,7 +52,12 @@ import { AddressListComponent } from './component/address-list/address-list.comp
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    DxTextBoxModule,
+    DxValidatorModule,
+    DxValidationSummaryModule,
+    DxValidationGroupModule,
+    DxButtonModule
 
   ],
   providers: [],
