@@ -20,14 +20,9 @@ import { AddressBookingComponent } from './page/address-booking/address-booking.
 import { AddressDetailsComponent } from './page/address-details/address-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddressListComponent } from './component/address-list/address-list.component';
-import { DxButtonModule, DxTextBoxModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
-// import {
-//   DxTextBoxModule,
-//   DxValidatorModule,
-//   DxValidationSummaryModule,
-//   DxValidationGroupModule,
-//   DxButtonModule
-// } from 'devextreme-angular';
+import { DxButtonModule, DxTextBoxModule, DxTreeListModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
+import { DxTreeListComponent } from './page/dx-tree-list/dx-tree-list.component';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +41,8 @@ import { DxButtonModule, DxTextBoxModule, DxValidationGroupModule, DxValidationS
     CountComponent,
     AddressBookingComponent,
     AddressDetailsComponent,
-    AddressListComponent
+    AddressListComponent,
+    DxTreeListComponent
   ],
   imports: [
     BrowserModule,
@@ -57,10 +53,12 @@ import { DxButtonModule, DxTextBoxModule, DxValidationGroupModule, DxValidationS
     DxValidatorModule,
     DxValidationSummaryModule,
     DxValidationGroupModule,
-    DxButtonModule
+    DxButtonModule,
+    DxTreeListModule,
 
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

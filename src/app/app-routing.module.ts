@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DxTreeListComponent } from './page/dx-tree-list/dx-tree-list.component';
 import { AddressListComponent } from './component/address-list/address-list.component';
 import { AboutComponent } from './page/about/about.component';
 import { AddressBookingComponent } from './page/address-booking/address-booking.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'address', component: AddressBookingComponent },
   { path: 'addressList', component: AddressListComponent },
   { path: 'addressDetails', component: AddressDetailsComponent },
+  { path: 'dxTree', component: DxTreeListComponent }
 ];
 
 @NgModule({
