@@ -14,11 +14,11 @@ if (!/localhost/.test(document.location.host)) {
 
 })
 export class DxGridComponent implements OnInit {
-  employees: DataApiService[];
+  dataSource: DataApiService[];
 
 
   constructor(service: Service) {
-    this.employees = service.getEmployees();
+    this.dataSource = service.getOrders();
 
   }
   calculateCellValue(data: any) {
