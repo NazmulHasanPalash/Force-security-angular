@@ -6,6 +6,7 @@ import { AboutComponent } from './page/about/about.component';
 import { AddressBookingComponent } from './page/address-booking/address-booking.component';
 import { AddressDetailsComponent } from './page/address-details/address-details.component';
 import { HomeComponent } from './page/home/home.component';
+import { DxGridComponent } from './page/dx-grid/dx-grid.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'address', component: AddressBookingComponent },
   { path: 'addressList', component: AddressListComponent },
   { path: 'addressDetails', component: AddressDetailsComponent },
-  { path: 'dxTree', component: DxTreeListComponent }
+  { path: 'dxTree', component: DxTreeListComponent },
+  { path: 'dxGrid', component: DxGridComponent },
 ];
 
 @NgModule({

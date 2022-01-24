@@ -20,8 +20,9 @@ import { AddressBookingComponent } from './page/address-booking/address-booking.
 import { AddressDetailsComponent } from './page/address-details/address-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddressListComponent } from './component/address-list/address-list.component';
-import { DxButtonModule, DxTextBoxModule, DxTreeListModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
+import { DxButtonModule, DxDataGridModule, DxTextBoxModule, DxTreeListModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
 import { DxTreeListComponent } from './page/dx-tree-list/dx-tree-list.component';
+import { DxGridComponent } from './page/dx-grid/dx-grid.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { DxTreeListComponent } from './page/dx-tree-list/dx-tree-list.component'
     AddressBookingComponent,
     AddressDetailsComponent,
     AddressListComponent,
-    DxTreeListComponent
+    DxTreeListComponent,
+    DxGridComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,8 @@ import { DxTreeListComponent } from './page/dx-tree-list/dx-tree-list.component'
     DxValidationGroupModule,
     DxButtonModule,
     DxTreeListModule,
+    DxDataGridModule,
+
 
   ],
   providers: [],
