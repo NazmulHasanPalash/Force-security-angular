@@ -20,9 +20,12 @@ import { AddressBookingComponent } from './page/address-booking/address-booking.
 import { AddressDetailsComponent } from './page/address-details/address-details.component';
 import { FormsModule } from '@angular/forms';
 import { AddressListComponent } from './component/address-list/address-list.component';
-import { DxButtonModule, DxDataGridModule, DxTextBoxModule, DxTreeListModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
+import { DxButtonModule, DxChartModule, DxDataGridModule, DxDiagramModule, DxHtmlEditorModule, DxPopupModule, DxTextBoxModule, DxTreeListModule, DxValidationGroupModule, DxValidationSummaryModule, DxValidatorModule } from 'devextreme-angular';
 import { DxTreeListComponent } from './page/dx-tree-list/dx-tree-list.component';
 import { DxGridComponent } from './page/dx-grid/dx-grid.component';
+import { DxhtmleditorComponent } from './page/dxhtmleditor/dxhtmleditor.component';
+import { DxDiagramComponent } from './page/dx-diagram/dx-diagram.component';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 
 @NgModule({
@@ -44,7 +47,9 @@ import { DxGridComponent } from './page/dx-grid/dx-grid.component';
     AddressDetailsComponent,
     AddressListComponent,
     DxTreeListComponent,
-    DxGridComponent
+    DxGridComponent,
+    DxhtmleditorComponent,
+    DxDiagramComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +63,12 @@ import { DxGridComponent } from './page/dx-grid/dx-grid.component';
     DxButtonModule,
     DxTreeListModule,
     DxDataGridModule,
+    DxHtmlEditorModule,
+    DxPopupModule,
+    DxDiagramModule,
+    DxChartModule,
+
+
 
 
   ],
@@ -66,3 +77,4 @@ import { DxGridComponent } from './page/dx-grid/dx-grid.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);

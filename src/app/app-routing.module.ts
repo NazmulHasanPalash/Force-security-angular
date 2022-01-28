@@ -7,6 +7,8 @@ import { AddressBookingComponent } from './page/address-booking/address-booking.
 import { AddressDetailsComponent } from './page/address-details/address-details.component';
 import { HomeComponent } from './page/home/home.component';
 import { DxGridComponent } from './page/dx-grid/dx-grid.component';
+import { DxhtmleditorComponent } from './page/dxhtmleditor/dxhtmleditor.component';
+import { DxDiagramComponent } from './page/dx-diagram/dx-diagram.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'addressDetails', component: AddressDetailsComponent },
   { path: 'dxTree', component: DxTreeListComponent },
   { path: 'dxGrid', component: DxGridComponent },
+  { path: 'dxHtml', component: DxhtmleditorComponent },
+  { path: 'dxDiagram', component: DxDiagramComponent },
 ];
 
 @NgModule({
